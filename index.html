@@ -243,7 +243,7 @@
                 <li style ="text-align:left;"><b>Shading</b> and surface protection against direct irradiation</li>
 				</section >
 				
-				<section >
+				<section id="Addressing planning issues connected to UHI/LHI">
 						<h2 style="text-align:left"> Issues to address</h2> 
 						<br>
 						<li style ="text-align:left; margin-left: 200px">How can I monitor local heat islands?</li>
@@ -252,6 +252,168 @@
 						<li style ="text-align:left; margin-left: 200px">How can I use this in planning situations for the mitigation of urban heat?</li>
 						<li style ="text-align:left; margin-left: 200px">Benefits, limitations and errors</li>
 						<br>
+				</section >
+				
+			    <section id="Technical background EO derived data">
+				    <section >
+						<h2 style="text-align:left"> How to analyse urban heat islands?</h2> 
+						<br>
+						<p style ="text-align:left;">To detect UHIs we are going to use the land surface temperature (LST). Be aware that 
+						this is equal to the air temperature that people will experience in that place. However, it a good and easy-to-access indicator.<br><br>
+						We are going to use data from Sentinel-3, which has thermal bands included and thus 
+						provides LST. Another alternative would be Landsat-8 which has a higher resolution 
+						(Sentinel-3: 300m, Landsat-8: 100m (resampled to 30m)). At the moment, there are two 
+						identical satellites Sentinel-3A and Sentinel-3B. It doesn’t matter which one we use.</p>
+					</section>
+					
+					<section>
+						<h1>Remote sensing</h1> 
+						<ul>
+						<li>the acquisition of information about an object or phenomenon without making physical contact</li>
+						<li>used in numerous fields, including geography, land surveying and most Earth science disciplines (for example, hydrology,&nbsp;ecology, meteorology, oceanography, glaciology, geology); it also has military, intelligence, commercial, economic, planning, and humanitarian applications.</li>
+						<li>repeating satellite orbits enable continuous monitoring of the object, phenomenon or area in general, i.e. gathering <b>EO time series</b></li>
+						</ul>
+					</section>
+					
+					<section class="scrollable">
+						<br>
+						<h2>EO time series</h2>
+						<ul>
+						<li>The same phenomenon given in different time, example in gGIF image</li>
+						<li>For the analyis of the time series we need images from different epoch &ndash; often some preprocessing is needed due to:
+						<ul>
+						<li>Different image resolution</li>
+						<li>Different sensor</li>
+						<li>Different angle</li>
+						<li>Different coordinate system</li>
+						<li>Different color/signal interpretation</li>
+						</ul>
+						</li>
+						</ul>
+						<img width="600" height="450" img src="http://eo4geo.sbg.ac.at/GEOF/Understanding-the-concept-of-EO-time-series/timelapse.gif" alt="sat1">					
+					</section>
+					
+					<section>
+						<br>
+						<h2>EO time series</h2>
+						<ul>
+						<li>Efficiently provides information on
+						<ul>
+						<li>Land cover change</li>
+						<li>Vertical and horizontal land movements</li>
+						<li>Sea level change</li>
+						<li>Ice sheet balance change</li>
+						<li>Temperature change over the season or different time</li>
+						<li>Specific events such as fires, floods, landslides, earthquakes, etc.</li>
+						<li>Enable global and local analysis (such as detecting and monitoring Urban Heat Islands, UHIs)</li>
+						</ul>
+						</li>
+						</ul>
+					</section>
+					
+					<section>
+						<br>
+						<h1>EO time series for UHI monitoring</h1>
+						<table style="height: 369px;" width="847">
+						<tbody>
+						<tr>
+						<td style="width: 415.333px;">
+						<ul>
+						<li>Satellite sensors can observe surface temperature using thermal sensors</li>
+						<li>Sensors available at different satellites</li>
+						</ul>
+						</td>
+						<td style="width: 415.333px;"><img src="http://eo4geo.sbg.ac.at/GEOF/Understanding-the-concept-of-EO-time-series/thermalsensor.png" alt="" width="400" height="384" /></td>
+						</tr>
+						</tbody>
+						</table>						
+					</section>
+					
+					<section>
+						<br>
+						<h2>EO time series for UHI monitoring</h2>
+						<ul>
+						<li>Different sensing instruments
+						<ul>
+						<li><a href="https://www.satimagingcorp.com/satellite-sensors/other-satellite-sensors/aster/">ASTER</a>
+						<ul>
+						<li>Advanced Spaceborne Thermal Emission and Reflection Radiometer</li>
+						<li>Imaging device on the TERRA satellite</li>
+						</ul>
+						</li>
+						<li><a href="https://landsat.gsfc.nasa.gov/the-enhanced-thematic-mapper-plus/">ETM+</a>
+						<ul>
+						<li>Enhanced Thematic Mapper</li>
+						<li>Sensor platform on the LANDSAT satellite</li>
+						</ul>
+						</li>
+						<li><a href="https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3/news/-/article/sentinel-3a-takes-earth-s-temperature">ESA </a><a href="https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3/news/-/article/sentinel-3a-takes-earth-s-temperature">Copernicus</a><a href="https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3/news/-/article/sentinel-3a-takes-earth-s-temperature"> Sentinel-3A</a> (focus of this presentation)
+						<ul>
+						<li>Carried out by EUMETSAT</li>
+						<li>Toolbox available</li>
+						</ul>
+						</li>
+						</ul>
+						</li>
+						</ul>					
+					</section>
+				</section >
+				
+				<section >	
+					<section>
+						<br>
+						<h2>Vegetation – UHI relationship</h2>
+						<ul>
+						<li>More the vegetation less the UHI effect</li>
+						<li>Methods on quantifying this
+						<ul>
+						<li>NDVI (Normalized Difference Vegetation Index)</li>
+						<li>Vegetation fraction</li>
+						<li>LAI (Leaf Area Index)</li>
+						<li>Other methods
+						<ul>
+						<li>Handheld temperature sensors</li>
+						<li>Aerial temperature measurements</li>
+						</ul>
+						</li>
+						</ul>
+						</li>
+						</ul>
+					</section>
+					
+					<section class="scrollable">
+						<br>
+						<h2>Vegetation – UHI relationship</h2>
+						<table style="height: 337px;" width="841">
+						<tbody>
+						<tr>
+						<td style="width: 830px; text-align: center;">
+						<p><strong>NDVI</strong></p>
+						<p>Numerical indicator showing live green vegetation</p>
+						<p>NDVI = (NIR &ndash; RED) / (NIR + RED)</p>
+						</td>
+						</tr>
+						<tr>
+						<td style="width: 830px; text-align: center;">
+						<p><strong>Vegetation fraction</strong></p>
+						<p>Derived from spectral mixture model</p>
+						<p>Uses LSMA to determine vegetation &ndash; at sub-pixel level</p>
+						<p>Sometimes more accurate than NDVI</p>
+						</td>
+						</tr>
+						<tr>
+						<td style="width: 830px; text-align: center;">
+						<p><strong>LAI</strong></p>
+						<p>Can be computed from NDVI</p>
+						<p>Can be derived from field measurements (collection of leaf litterfall or destructive harvesting of leaves within a vertical column passing upward through the entire tree canopy)</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p style="text-align: center;">&nbsp;</p>
+						<p style="text-align: center;">&nbsp;</p>
+						<p style="text-align: center;">&nbsp;</p>
+					</section>
 				</section >
 				
 				<!-- AUTHORS:   Option to Jupyter Notebook (Python) AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): --> 
